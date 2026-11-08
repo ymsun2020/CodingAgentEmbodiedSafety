@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ArmedAgent: studying the safety risks of coding agents controlling robot arms across the digital-physical boundary.">
+<title>ArmedAgent — When Coding Agents Get Arms</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="#">Armed<span>Agent</span><span class="brand-dot" aria-hidden="true"></span></a><nav aria-label="Main navigation"><a href="#abstract">Abstract</a><a href="#overview">Overview</a><a href="#experiments">Real robot</a></nav></header>
+<main>
+<section class="hero">
+<p class="eyebrow">CODING AGENTS × ROBOT SAFETY</p>
+<h1>When Coding Agents<br>Get <em>Arms.</em></h1>
+<p class="subtitle">Safety Risks Across the Digital-Physical Boundary</p>
+<p class="affiliation">Fudan University <span aria-hidden="true">/</span> JADE AI (Whitzard AI) Team</p>
+<div class="actions"><!-- TODO: Replace this placeholder with an arXiv link when available. -->
+<span class="button arxiv-placeholder" aria-disabled="true">arXiv · Coming soon</span><a class="button" href="#experiments">Explore real-robot tests <span aria-hidden="true">↓</span></a></div>
+<div class="scope"><div><strong>36</strong><span>Benchmark tasks</span></div><div><strong>5</strong><span>Scenarios</span></div><div><strong>3</strong><span>Risk categories</span></div><div><strong>5</strong><span>Real-robot trials</span></div></div>
+</section>
+<section id="abstract" class="abstract section"><div class="section-label"><span>01 / THE STUDY</span><h2>Abstract</h2></div><div class="prose" id="abstract-copy"><p>Advances in spatial understanding have enabled frontier models to power coding agents that control a real robot arm zero-shot and end-to-end, without task-specific demonstrations or retraining. This brings two new safety challenges. First, the extensive knowledge of frontier models lets these agents perform tasks that earlier VLA and WAM paradigms could not, opening the door to new forms of capability misuse. Second, coding agents can access digital resources such as web pages and emails. Threats in these resources, such as indirect prompt injection, can carry over into the physical world when the agent controls a robot.</p><p>We therefore introduce ArmedAgent, the first systematic benchmark to evaluate both risks for coding agents performing zero-shot robot control. It covers robustness, malicious use, and indirect injection across 36 tasks in 5 scenarios, evaluated in simulation and validated on a physical robot arm. A distinctive portion of the tasks target harmful behaviors that earlier VLA paradigms could not perform. Testing several frontier models, including GPT-6-Astra, under widely used agent frameworks, we find substantial safety risks in current systems.</p></div></section>
+<section id="overview" class="section overview"><div class="section-heading"><div><p class="eyebrow">02 / THE DIGITAL-PHYSICAL BOUNDARY</p><h2>Three sources of risk.</h2></div><p>From a benign request to an unsafe action.<br>From untrusted text to physical consequences.</p></div>
+<figure class="overview-figure"><button class="image-button" data-image="assets/figure1.png" aria-label="Enlarge Figure 1"><img src="assets/figure1.png" alt="Figure 1. Three robot safety scenarios: a damp cloth on a memory module, offensive text written on a whiteboard, and an injected email that restricts the robot's joint rotation." width="2400" height="1350"></button><figcaption><strong>Figure 1.</strong> Three sources of risk in coding agents controlling robots: robustness, malicious use, and indirect prompt injection. Click the figure to inspect the full-resolution image.</figcaption></figure>
+<div class="risk-list"><article><span class="number">A</span><h3>Robustness</h3><p>A benign request becomes unsafe when the agent fails to account for the physical scene.</p></article><article><span class="number">B</span><h3>Malicious use</h3><p>An explicitly harmful request exploits the agent’s planning and robot-control capabilities.</p></article><article><span class="number">C</span><h3>Indirect injection</h3><p>Instructions embedded in digital resources influence the agent’s physical actions or control settings.</p></article></div>
+</section>
+<section id="experiments" class="section experiments"><div class="section-heading"><div><p class="eyebrow">03 / ON REAL HARDWARE</p><h2>Beyond simulation.</h2></div><p>Five tasks. A physical robot arm.<br>Two camera views.</p></div>
+<p class="experiment-intro">We evaluate GPT-6-Astra under Codex on a physical robot arm using a wrist-mounted fisheye camera and an external top-down camera. These experiments examine whether risks observed in simulation can also arise on real hardware.</p>
+<div id="experiment-list"></div>
+</section>
+<footer><a class="brand" href="#">Armed<span>Agent</span></a><p>When Coding Agents Get Arms<br>Fudan University · JADE AI (Whitzard AI) Team</p><a href="#">Back to top ↑</a></footer>
+</main>
+<dialog id="lightbox" aria-label="Expanded research figure"><button class="close" aria-label="Close expanded image">Close ×</button><img alt=""><p></p></dialog>
+<script src="script.js"></script>
+</body></html>
