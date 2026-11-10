@@ -3,3 +3,6 @@
 .arxiv-placeholder{color:var(--muted);background:#edf2e9;border-color:var(--line);cursor:default}.arxiv-placeholder:hover{background:#edf2e9}
 
 .experiment-video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#101615;border-radius:3px}
+
+/* Keep the lightweight animated preview visible in the first viewport. */
+.hero{padding-top:30px}.hero>.eyebrow{margin-bottom:14px}.hero h1{font-size:clamp(42px,5.4vw,64px);letter-spacing:-2.5px}.hero .subtitle{margin:15px 0 20px;font-size:20px}.hero-preview{max-width:800px;margin:0 auto 20px}.hero-preview img{display:block;width:100%;height:auto;border-radius:6px;background:#e5e9e2}.hero-preview figcaption{font-size:11px;margin-top:8px;line-height:1.6}.hero .actions{margin:22px 0 30px}@media(max-width:700px){.hero{padding-top:24px}.hero .subtitle{font-size:16px;margin:12px 0 18px}.hero-preview figcaption{font-size:9px}.hero h1{letter-spacing:-2px}}
